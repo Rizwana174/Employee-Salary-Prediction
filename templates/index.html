@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Employee Salary Prediction</h1>
+
+    <form action="/predict" method="post">
+
+        <label>Enter Age</label>
+        <input type="number" name="age" placeholder="Enter Age" required>
+
+        <label>Educational Number</label>
+        <input type="number" name="educational_num" placeholder="Educational Number" required>
+
+        <label>Hours Per Week</label>
+        <input type="number" name="hours_per_week" placeholder="Hours Per Week" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    {% if prediction_text %}
+    <div class="result">
+        {{ prediction_text }}
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
