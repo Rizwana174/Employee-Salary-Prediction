@@ -20,6 +20,7 @@ A Machine Learning web application that predicts whether an employee's salary is
 - templates/index.html
 - static/style.css
 - model/salary_model.pkl
-
+## Live Demo
+https://employee-salary-prediction-olx7.onrender.com
 ## Author
 Shaik Rizwana Afrin
